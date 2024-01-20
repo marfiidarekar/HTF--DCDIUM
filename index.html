@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive HTB navbar</title>
+    <link rel= "stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class=" logo-img" >
+            <img src="./download (1).jpg">
+        </div>
+       
+        <div class="logo"> DCDIUM </div>
+        
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            
+            <ul>
+                <li>
+                    <a href="">Business</a>
+                </li>
+                <li>
+                    <a href="">Hackers</a>
+                </li>
+                <li>
+                    <a href="">Resources</a>
+                </li>
+                
+            
+            
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        hamburger = document.querySelector(".hamburger")
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+
+        }
+    </script>
+</body>
+</html>
