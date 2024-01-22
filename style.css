@@ -8,28 +8,36 @@
 }
 
 body{
-    background: #fefefe;
+    background: #212529;
 }
 .logo-img img {
     width: 50px; 
     height: auto;
 }
+.logo-img span {
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 5px;
+}
+
 
 header{
     width:100%;
     height: 80px;
-    background: #11101b;
+    background:rgb(108, 105, 105);;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
     padding: 0 20px;
 
 }
 
 .logo{
-    font-size: 28px;
+
+    font-size: 20px;
     font-weight: bold;
-    color: #fefefe;
+    color: #11101b;
 }
 
 
@@ -38,18 +46,71 @@ header{
     margin-left: 0;
 
 }
+.nav-bar{
+    display: flex;
+    align-items: center;
+}
 .nav-bar ul{
     display:flex;
 }
 .nav-bar ul li a {
     display: block;
-    color: #fefefe;
+    color: #11101b;
     font-size: 20px;
+    font-weight: bold;
     padding: 10px 25px;
     border-radius: 50px;
     transition: 0.2s;
     margin: 0 5px;
 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.dropdown-content:hover {
+    background-color:burlywood;
+    color: #fff;
+}
+
+button{
+    padding:10px 25px;
+    transition: 0.2s;
+    margin: 0 5px;
+    color: #11101b
+}
+.sign-in{
+    background-color: rgb(108, 105, 105);
+    
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.Get-start{
+    background-color: #9FEF00;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 0px 0px 0px 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.Get-start:hover{
+    color:#11101b;
+    background-color: #d3f93e;
 }
 
 .nav-bar ul li a:hover{
@@ -87,7 +148,7 @@ header{
     left:0;
     right:0;
     width:100vw;
-    background: #11101b;
+    background: rgb(108, 105, 105);;
     transition: 0.5s;
     overflow: hidden;
  }
@@ -111,4 +172,7 @@ header{
  .nav-bar ul li a{
     margin-bottom: 12px;
  }
+ button {
+    display: none;
+}
 }
