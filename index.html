@@ -10,9 +10,9 @@
     <header>
         <div class=" logo-img" >
             <img src="./download (1).jpg">
+            <span>DCDIUM</span>
         </div>
        
-        <div class="logo"> DCDIUM </div>
         
         <div class="hamburger">
             <div class="line"></div>
@@ -28,23 +28,32 @@
                 <li>
                     <a href="">Hackers</a>
                 </li>
-                <li>
-                    <a href="">Resources</a>
-                </li>
                 
-            
-            
+                    <li class="dropdown" onmouseover="showDropdown()" onmouseleave="hideDropdown()">
+                        <a href="#">Resources</a>
+                        <div class="dropdown-content" id="resources-dropdown">
+                            <a href="#">Knowledge Base</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Affiliate Program</a>
+                            <a href="#">Glossary</a>
+                            <a href="#">Forum</a>
+                            <a href="#">Community</a>
+                        </div>
+                    </li>
+                    
             </ul>
+            
+            <button class="sign-in">Sign In</button>
+            
+            <button class="Get-start">Get Started</button>
+       
+
         </nav>
     </header>
 
-    <script>
-        hamburger = document.querySelector(".hamburger")
-        hamburger.onclick = function(){
-            navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-
-        }
-    </script>
+    <script src="app.js"></script>
+    
 </body>
 </html>
+
+
