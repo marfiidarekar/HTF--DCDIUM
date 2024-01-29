@@ -5,10 +5,12 @@
     text-decoration:none;
     font-family:"Google Sans Regular";
     box-sizing:border-box;
+    
 }
 
 body{
     background: #212529;
+    
 }
 .logo-img img {
     width: 50px; 
@@ -117,6 +119,89 @@ button{
     color:#11101b;
     background: #fefefe;
 }
+.container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.card-container {
+    display: inline-flex;
+}
+
+.card {
+    width: 450px;
+    box-shadow: 0 4px 8px black;
+    transition: 0.5s;
+    margin: 10px 30px;
+    
+    background-color: #1A2332;
+}
+.card h2{
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.desc {
+    padding: 2px;
+    text-align: center;
+    padding-top: 10px;
+  
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px black;
+    transform: translateY(-5px);
+}
+
+.card p {
+    color: #A4B1CD;
+    font-size: larger;
+}
+
+.desc a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding-top:10px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+.desc a:hover {
+    color: #9FE900;
+}
+
+.why-section {
+    margin-top: 70px;
+}
+
+h2 {
+    color: #ffffffff;
+    font-size: xx-large;
+    
+}
+p{
+    color: #A4B1CD;
+}
+.card-container2{
+    display: inline-flex;
+    margin: 70px 0 50px 20px;
+}
+.card-container2 p{
+    padding:20px;
+}
+
+
+.card:nth-child(3n+1) {
+    margin-left:0; /* Reset margin for every 3rd card */
+}
 
 
 
@@ -176,3 +261,4 @@ button{
     display: none;
 }
 }
+
